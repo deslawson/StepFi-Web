@@ -7,9 +7,9 @@ import { Button } from '../ui/Button'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/dashboard', label: 'Dashboard' },
-  { href: '/loans', label: 'Loans' },
-  { href: '/reputation', label: 'Reputation' },
+  { href: '/sponsors', label: 'Sponsors' },
   { href: '/vendors', label: 'Vendors' },
+  { href: '/vouch', label: 'Vouch' },
 ]
 
 export function Navbar() {

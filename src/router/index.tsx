@@ -2,11 +2,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from '../components/layout/Layout'
 import { Home } from '../pages/Home'
 import { Dashboard } from '../pages/Dashboard'
-import { Loans } from '../pages/Loans'
-import { Reputation } from '../pages/Reputation'
 import { Vendors } from '../pages/Vendors'
-import { Apply } from '../pages/Apply'
+import { VendorRegister } from '../pages/VendorRegister'
 import { Sponsors } from '../pages/Sponsors'
+import { Vouch } from '../pages/Vouch'
 import { NotFound } from '../pages/NotFound'
 
 const router = createBrowserRouter([
@@ -19,24 +18,20 @@ const router = createBrowserRouter([
     element: <Layout><Dashboard /></Layout>,
   },
   {
-    path: '/loans',
-    element: <Layout><Loans /></Layout>,
-  },
-  {
-    path: '/reputation',
-    element: <Layout><Reputation /></Layout>,
-  },
-  {
     path: '/vendors',
     element: <Layout><Vendors /></Layout>,
   },
   {
-    path: '/apply',
-    element: <Layout><Apply /></Layout>,
+    path: '/vendors/register',
+    element: <Layout><VendorRegister /></Layout>,
   },
   {
     path: '/sponsors',
     element: <Layout><Sponsors /></Layout>,
+  },
+  {
+    path: '/vouch',
+    element: <Layout><Vouch /></Layout>,
   },
   {
     path: '*',
