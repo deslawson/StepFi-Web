@@ -4,8 +4,10 @@ import { Home } from '../pages/Home'
 import { Dashboard } from '../pages/Dashboard'
 import { Vendors } from '../pages/Vendors'
 import { VendorRegister } from '../pages/VendorRegister'
+import { VendorDashboard } from '../pages/VendorDashboard'
 import { Sponsors } from '../pages/Sponsors'
 import { Vouch } from '../pages/Vouch'
+import { LearnerProfile } from '../pages/LearnerProfile'
 import { NotFound } from '../pages/NotFound'
 
 const router = createBrowserRouter([
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
     element: <Layout><Vendors /></Layout>,
   },
   {
+    path: '/vendors/dashboard',
+    element: <Layout><VendorDashboard /></Layout>,
+  },
+  {
     path: '/vendors/register',
     element: <Layout><VendorRegister /></Layout>,
   },
@@ -32,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: '/vouch',
     element: <Layout><Vouch /></Layout>,
+  },
+  {
+    path: '/learner/:walletAddress',
+    element: <Layout><LearnerProfile /></Layout>,
   },
   {
     path: '*',
