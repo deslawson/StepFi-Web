@@ -278,7 +278,7 @@ function truncateId(id: string) {
 
 function HeroSection() {
   return (
-    <section className="relative flex items-center min-h-[calc(100vh-5rem)] overflow-hidden">
+    <section className="relative flex items-center min-h-[calc(100dvh-5rem)] md:min-h-[calc(100vh-5rem)] overflow-hidden">
       <DotGrid />
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full py-20 text-center">
         <motion.div

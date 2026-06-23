@@ -12,11 +12,16 @@
   display: none;
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: #080F1A;
   color: #F0F4F8;
   font-family: 'DM Sans', sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {

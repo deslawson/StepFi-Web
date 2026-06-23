@@ -25,7 +25,7 @@ export function Footer() {
             © 2026 · MIT License · Built for Stellar
           </span>
         </div>
-        <div className="flex items-center gap-6 text-sm
+        <div className="flex flex-wrap items-center justify-center gap-4 text-sm
           text-text-muted">
           <a href="https://github.com/StepFi-app"
             target="_blank"

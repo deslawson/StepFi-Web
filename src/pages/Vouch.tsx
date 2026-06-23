@@ -199,13 +199,13 @@ export function Vouch() {
         )}
       </div>
 
-      <div className="flex gap-1 p-1 rounded-xl bg-surface border border-border mb-8 w-fit">
+      <div className="flex gap-1 p-1 rounded-xl bg-surface border border-border mb-8 w-full sm:w-fit overflow-x-auto">
         {tabs.map((tab) => (
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
             className={`
-              flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all
+              flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all flex-1 sm:flex-none
               ${
                 activeTab === tab.key
                   ? 'bg-elevated text-text-primary shadow-sm'

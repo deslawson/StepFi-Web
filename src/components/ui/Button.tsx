@@ -40,9 +40,9 @@ export function Button({
             variant === 'outline',
           'text-text-secondary hover:text-text-primary':
             variant === 'ghost',
-          'px-3 py-1.5 text-sm': size === 'sm',
-          'px-5 py-2.5 text-sm': size === 'md',
-          'px-7 py-3.5 text-base': size === 'lg',
+          'px-3 py-1.5 text-sm min-h-[44px]': size === 'sm',
+          'px-5 py-2.5 text-sm min-h-[44px]': size === 'md',
+          'px-7 py-3.5 text-base min-h-[44px]': size === 'lg',
         },
         className
       )}

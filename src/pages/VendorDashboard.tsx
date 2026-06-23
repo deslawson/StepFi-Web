@@ -280,19 +280,21 @@ function ApiKeySection({
       {showForm && (
         <div className="mb-4 p-4 rounded-xl border border-brand/20 bg-brand/5">
           <p className="text-text-secondary text-sm mb-3">Create a new API key</p>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2">
             <input
               type="text"
               value={label}
               onChange={(e) => setLabel(e.target.value)}
               placeholder="e.g. Production"
-              className="flex-1 px-3 py-2 rounded-xl bg-bg border border-border
+              className="w-full sm:flex-1 px-3 py-2 rounded-xl bg-bg border border-border
                 text-text-primary text-sm placeholder:text-text-muted
                 focus:outline-none focus:border-brand/40"
               onKeyDown={(e) => e.key === 'Enter' && handleCreate()}
             />
-            <Button size="sm" onClick={handleCreate} loading={isCreating}>Generate</Button>
-            <Button size="sm" variant="ghost" onClick={() => setShowForm(false)}>Cancel</Button>
+            <div className="flex gap-2">
+              <Button size="sm" onClick={handleCreate} loading={isCreating}>Generate</Button>
+              <Button size="sm" variant="ghost" onClick={() => setShowForm(false)}>Cancel</Button>
+            </div>
           </div>
         </div>
       )}

@@ -166,7 +166,7 @@ export function Sponsors() {
                     <span className="text-text-secondary">Preview Value:</span>
                     <span className="text-brand font-bold">{previewUsdc.toFixed(2)} USDC</span>
                   </div>
-                  <p className="text-[10px] text-text-muted leading-tight">
+                  <p className="text-xs text-text-muted leading-tight">
                     Estimated amount based on current share price. Final amount may vary slightly.
                   </p>
                 </div>

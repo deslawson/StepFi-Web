@@ -161,12 +161,11 @@ export function Navbar() {
               key={link.href}
               to={link.href}
               onClick={() => setMobileOpen(false)}
-              className="px-4 py-3 rounded-lg text-sm font-medium"
+              className="px-4 py-3 min-h-[44px] flex items-center rounded-lg text-sm font-medium"
               style={{
                 color: pathname === link.href
                   ? '#22C55E' : '#A8BCCF',
               }}
-              onClick={() => setMobileOpen(false)}
             >
               {link.label}
             </Link>
