@@ -281,14 +281,14 @@ function ApiKeySection({
         <div className="mb-4 p-4 rounded-xl border border-brand/20 bg-brand/5">
           <p className="text-text-secondary text-sm mb-3">Create a new API key</p>
           <div className="flex flex-col sm:flex-row gap-2">
-            <input
-              type="text"
-              value={label}
-              onChange={(e) => setLabel(e.target.value)}
-              placeholder="e.g. Production"
-              className="w-full sm:flex-1 px-3 py-2 rounded-xl bg-bg border border-border
-                text-text-primary text-sm placeholder:text-text-muted
-                focus:outline-none focus:border-brand/40"
+              <input
+                type="text"
+                value={label}
+                onChange={(e) => setLabel(e.target.value)}
+                placeholder="e.g. Production"
+                className="w-full sm:flex-1 px-3 min-h-[44px] rounded-xl bg-bg border border-border
+                  text-text-primary text-sm placeholder:text-text-muted
+                  focus:outline-none focus:border-brand/40"
               onKeyDown={(e) => e.key === 'Enter' && handleCreate()}
             />
             <div className="flex gap-2">
@@ -466,10 +466,10 @@ export function VendorDashboard() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <p className="text-text-muted text-sm font-mono mb-1">Vendor Dashboard</p>
-          <h1 className="font-display font-bold text-3xl text-text-primary">
+          <h1 className="font-display font-bold text-3xl text-text-primary break-all">
             {address.slice(0, 8)}...{address.slice(-6)}
           </h1>
         </div>

@@ -170,6 +170,15 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
+          <a
+            href="https://stepfi.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileOpen(false)}
+            className="px-4 py-3 min-h-[44px] flex items-center gap-2 rounded-lg text-sm font-medium text-text-muted hover:text-brand transition-colors"
+          >
+            Landing <ExternalLink size={14} />
+          </a>
           <div className="pt-3 mt-2"
             style={{
               borderTop: '1px solid rgba(30,58,82,0.3)'

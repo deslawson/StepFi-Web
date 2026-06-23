@@ -344,7 +344,7 @@ export function SponsorOnboarding() {
         <div className="text-center mt-8">
           <button
             onClick={() => setStep(step - 1)}
-            className="text-sm text-text-muted hover:text-text-secondary transition-colors"
+            className="min-h-[44px] px-4 text-sm text-text-muted hover:text-text-secondary transition-colors"
           >
             Back
           </button>

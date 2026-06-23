@@ -215,7 +215,7 @@ export function Sponsors() {
                 href={`https://stellar.expert/explorer/testnet/tx/${successData.hash}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-2 text-sm
+                className="flex items-center justify-center gap-2 w-full min-h-[44px] py-2 text-sm
                   text-text-secondary hover:text-brand transition-colors border border-border rounded-xl"
               >
                 View on Stellar.expert

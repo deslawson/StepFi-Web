@@ -205,7 +205,7 @@ export function Contracts() {
             href={VERIFICATION_MD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-brand/10 text-brand border border-brand/20 hover:bg-brand/20 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 min-h-[44px] rounded-xl text-sm font-medium bg-brand/10 text-brand border border-brand/20 hover:bg-brand/20 transition-colors"
           >
             View VERIFICATION.md <ExternalLink size={14} />
           </a>
@@ -213,7 +213,7 @@ export function Contracts() {
             href="https://github.com/StepFi-app/StepFi-Contracts"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-text-muted border border-border hover:text-brand hover:border-brand/30 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 min-h-[44px] rounded-xl text-sm font-medium text-text-muted border border-border hover:text-brand hover:border-brand/30 transition-colors"
           >
             Browse Source Code <ExternalLink size={14} />
           </a>
