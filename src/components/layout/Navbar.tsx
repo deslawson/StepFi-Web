@@ -69,7 +69,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="relative px-4 py-2 text-sm
+                className="relative px-4 py-2 min-h-[44px] flex items-center text-sm
                   font-medium rounded-lg transition-all
                   duration-200 group"
                 style={{
@@ -98,7 +98,7 @@ export function Navbar() {
             href="https://stepfi.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 px-3 py-2
+            className="flex items-center gap-1 px-3 min-h-[44px]
               text-xs text-text-muted hover:text-brand
               transition-colors"
           >
@@ -107,7 +107,7 @@ export function Navbar() {
 
           {isConnected ? (
             <div className="flex items-center gap-2">
-              <div className="px-3 py-2 rounded-xl text-xs
+              <div className="px-3 min-h-[44px] flex items-center rounded-xl text-xs
                 font-mono text-text-secondary"
                 style={{
                   background: 'rgba(34,197,94,0.08)',
@@ -143,7 +143,7 @@ export function Navbar() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 rounded-lg text-text-secondary
+          className="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-text-secondary
             hover:text-text-primary transition-colors"
         >
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
